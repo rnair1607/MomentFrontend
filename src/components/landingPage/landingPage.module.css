@@ -1,0 +1,58 @@
+.scaffold {
+  /* background-color: #001b30; */
+  height: 100vh;
+  width: 100%;
+}
+.topLogoBanner {
+  position: absolute;
+  height: 40vh;
+  width: 100%;
+  z-index: 1;
+  background-color: #001b30;
+}
+.bottomContainer {
+  height: 80vh;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  background-color: white;
+  top: 20%;
+  border-radius: 2.5rem 0 0 0;
+  padding: 1% 10% 0.5%;
+}
+
+.backArrow {
+  cursor: pointer;
+  border-radius: 50%;
+  height: fit-content;
+}
+
+.backArrowContainer {
+  width: 10%;
+  display: flex;
+  margin-left: 2%;
+}
+.logoContainer {
+  width: 77%;
+  display: flex;
+  justify-content: center;
+}
+.mainContainer {
+  display: flex;
+  margin-top: 2%;
+}
+.componentContainer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+.maininnerContainer {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0 8%;
+}

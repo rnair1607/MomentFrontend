@@ -1,0 +1,15 @@
+.signUpText {
+  display: flex;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #545454;
+  margin-top: 3%;
+}
+.signUpLink {
+  font-style: normal;
+  font-weight: 500;
+  color: #000000;
+  margin-left: 1rem;
+  cursor: pointer;
+}

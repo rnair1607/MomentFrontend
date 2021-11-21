@@ -1,0 +1,113 @@
+.sidemenu {
+  background-color: white;
+  width: 15%;
+  height: 100%;
+  box-shadow: 10px 4px 17px -6px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 10px 4px 17px -6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 10px 4px 17px -6px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.logoContainer {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.profileLink {
+  width: 100%;
+  height: 8%;
+  font-weight: 400;
+  color: #001b30;
+  font-size: 1.5em;
+  padding: 5% 15%;
+}
+.momentsLink {
+  display: flex;
+  width: 100%;
+  height: 8%;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1.5em;
+  padding: 5% 15%;
+  background-color: #001b30;
+  justify-content: space-between;
+}
+
+.activeSelection {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #001b30;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.inactiveSelection {
+  cursor: pointer;
+  margin-left: 14px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #001b30;
+  margin-top: 10px;
+}
+.viewArea {
+  width: 85%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10%;
+  box-shadow: -1px 15px 17px -6px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: -1px 15px 17px -6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: -1px 15px 17px -6px rgba(0, 0, 0, 0.4);
+  padding-right: 1%;
+  padding-left: 1%;
+  /* z-index: 11; */
+}
+.componentArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  width: 100%;
+}
+img {
+  cursor: pointer;
+}
+.profileOptions {
+  display: flex;
+  width: 6rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.profilePic {
+  border-radius: 50%;
+  background-color: black;
+  font-weight: 500;
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

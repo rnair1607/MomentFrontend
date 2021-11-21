@@ -1,0 +1,88 @@
+.formContainer {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #dbdbdb;
+  width: 6rem;
+}
+.inputerror {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ca0303;
+  width: 6rem;
+}
+.input:focus,
+.inputerror:focus {
+  border-bottom: 2px solid #000000;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+
+.label {
+  font-weight: 500;
+  color: #001b30;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+.showHideIcon {
+  width: 5%;
+  cursor: pointer;
+  height: 78%;
+  margin-left: -2rem;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+.inputWrapper {
+  display: flex;
+  width: 100%;
+}
+.iconWrapper {
+  border-bottom: 2px solid #dbdbdb;
+  padding-bottom: 1%;
+}
+.inputPassword {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #dbdbdb;
+  width: 20rem;
+  margin-left: 5%;
+}
+
+.inputPasswordError {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ca0303;
+  width: 20rem;
+  margin-left: 5%;
+}
+
+.inputPassword:focus,
+.inputPasswordError:focus {
+  border-bottom: 2px solid #000000;
+}
+@media only screen and (max-width: 600px) {
+  .showHideIcon {
+    width: 13%;
+    cursor: pointer;
+    height: 78%;
+    margin-left: -2rem;
+  }
+}
+/* @media (min-width: 1025px) {
+  .formContainer {
+    margin: 2% 2% 2% 27%;
+  }
+} */

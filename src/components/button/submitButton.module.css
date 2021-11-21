@@ -1,0 +1,13 @@
+.signIn {
+  margin-top: 3%;
+  background: #001b30;
+  color: white;
+  border-radius: 25px;
+  width: 10rem;
+  height: 3rem;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
