@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 import styles from './signIn.module.css';
 import LandingPage from '../../components/landingPage/LandingPage';
@@ -55,16 +56,25 @@ const SignIn = () => {
       localStorage.setItem('userData', JSON.stringify(res.data));
       navigate('/protected');
     } catch (error) {
-      console.log(error.response.data);
-      if (error.response.data.message === 'Password invalid') {
-        setpasswordError(true);
-      }
-      if (error.response.data.message === 'User not found') {
-        setemailError(true);
-      } else {
-        setemailError(true);
-        setpasswordError(true);
-      }
+      toast.error(error.response.data.message, {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      // console.log(error.response.data);
+      // if (error.response.data.message === 'Password invalid') {
+      //   setpasswordError(true);
+      // }
+      // if (error.response.data.message === 'User not found') {
+      //   setemailError(true);
+      // } else {
+      //   setemailError(true);
+      //   setpasswordError(true);
+      // }
     }
   };
 

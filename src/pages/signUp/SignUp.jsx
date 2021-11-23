@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 import LandingPage from '../../components/landingPage/LandingPage';
 import emailIcon from '../../assets/email.png';
@@ -78,12 +79,21 @@ const SignUp = () => {
         city,
       });
       console.log(res.data);
-      localStorage.setItem('userData', res.data);
+      localStorage.setItem('userData', JSON.stringify(res.data));
       navigate('/protected');
     } catch (error) {
-      if (error.response.data.message === 'Email already exists') {
-        setemailerror(true);
-      }
+      // if (error.response.data.message === 'Email already exists') {
+      //   setemailerror(true);
+      // }
+      toast.error(error.message, {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     }
   };
 

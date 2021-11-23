@@ -1,5 +1,3 @@
-import axios from 'axios';
-import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './App.css';
@@ -8,17 +6,22 @@ import SignIn from './pages/signIn/SignIn';
 import SignUp from './pages/signUp/SignUp';
 import { authCheck } from './utils/auth';
 
-function App() {
-  const isAuth = async () => {
-    let isOk = await authCheck();
-    console.log(`isAuth`, isOk);
-    return isOk;
-  };
+import { ToastContainer } from 'react-toastify';
 
-  let AUTH_TOKEN = JSON.parse(localStorage.getItem('userData'))?.token;
-  axios.defaults.headers.common['auth-token'] = AUTH_TOKEN;
+function App() {
   return (
     <div className="App">
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<SignIn />} />
